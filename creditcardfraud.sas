@@ -44,6 +44,10 @@ proc sgplot data = work.cc aspect = 1;
    yaxis grid label = "Component 2";
 run;
 
+*------------------------------------------------------------------------------;
+*Code below untested (thus, possibly erroneous) due to VLAB memory restrictions;
+*------------------------------------------------------------------------------;
+
 proc sort data = work.cc
 		out = work.cc_sorted;
 	by class;
